@@ -43,13 +43,14 @@ public class Massive {
         }
         System.out.println();
         System.out.println("Задание 4");
-        int[] arr4 = new int[]{22, 12, 42};
-        for (int i = 0; i <= arr4.length; i++) {
-            if (arr4[i] % 2 == 1) {
-                arr4[i] +=1;
-                System.out.print(" ,");
+        int[] arr4 = new int[]{2, 2, 4};
+        for (int i = 0; i <= arr4.length; i++)
+            if (arr4[i] % 2 == 0) {
+                arr4[i] += 0;
+                System.out.print(arr4[i]);
+                if (i < 2)
+                    System.out.print(" ,");
             }
-        }
     }
 }
 
